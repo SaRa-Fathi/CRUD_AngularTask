@@ -1,0 +1,40 @@
+<form [formGroup]="Validate_Form" class="form">
+  <div class="form-row mt-5" style="width:50%; margin: auto;">
+      <label for="name">Name</label>
+      <input formControlName="name" type="text" class="form-control mb-2" placeholder="Name">
+
+      <label for="age">Age</label>
+      <input formControlName="age" type="number" class="form-control mb-2" placeholder="Age">
+
+      <label for="email">Email</label>
+      <input formControlName="email" type="email" class="form-control mb-2" placeholder="Email">
+
+      <label for="phone">Phone</label>
+      <input formControlName="phone" type="phone" class="form-control mb-2" placeholder="Phone">
+
+      <label for="address">Address</label>
+      <input formControlName="address" type="text" class="form-control mb-2" placeholder="Address">
+
+
+      <div class="text-center alert alert-danger" *ngIf="!NameCheck">
+        Name must be more than 3 chars
+      </div>
+      <div class="text-center alert alert-danger" *ngIf="!AgeCheck">
+        Age must be between 20 & 40
+      </div>
+      <div class="text-center alert alert-danger" *ngIf="!EmailCheck">
+        Enter a Valid Email
+      </div>
+      <div class="text-center alert alert-danger" *ngIf="!phoneCheck">
+        Phone is required
+      </div>
+      <div class="text-center alert alert-danger" *ngIf="!addressCheck">
+        Address is required
+      </div>
+      <input (click)="validate()" type="submit" class="btn btn-primary"  value ="Register" >
+      <div class="text-center alert alert-success" *ngIf="Validate_Form.valid">
+        <p class="h5">{{ show }}</p>
+      </div>
+  </div>
+</form>
+

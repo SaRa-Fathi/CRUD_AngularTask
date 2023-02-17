@@ -1,0 +1,44 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Sara Fathi",
+      "age": 23,
+      "email": "sara@gmail.com",
+      "phone": "0122",
+      "address": "Alex"
+    },
+    {
+      "id": 2,
+      "name": "Ola",
+      "age": 21,
+      "email": "ola@gmail.com",
+      "phone": "0122",
+      "address": "Alex"
+    },
+    {
+      "id": 3,
+      "name": "SaRa",
+      "age": 22,
+      "email": "sara@gmail.com",
+      "phone": "0155",
+      "address": "Cairo"
+    },
+    {
+      "id": 4,
+      "name": "Jooe",
+      "age": 20,
+      "email": "joe@iti.gov.eg",
+      "phone": "+2012215",
+      "address": "Alexandria"
+    },
+    {
+      "name": "Salma",
+      "age": 27,
+      "email": "salma@google.com",
+      "phone": " 01000",
+      "address": "Cairo",
+      "id": 5
+    }
+  ]
+}

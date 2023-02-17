@@ -1,0 +1,24 @@
+<div class="card mt-5" style="max-width: 50%;margin: auto;" *ngIf="student ; else loading">
+  <div class="card-header text-center h2 bg-primary">Student # {{ student.id }} </div>
+  <div class="card-body text-center" style="background-color: rgba(152, 179, 199, 0.993);">
+    <h5 class="card-title">Name : </h5>
+    <h3 class="card-text" style="color: rgba(26, 92, 140, 0.993);">{{ student.name }}</h3>
+
+    <h5 class="card-title" >Email : </h5>
+    <h3 class="card-text" style="color: rgba(26, 92, 140, 0.993);">{{ student.email }}</h3>
+
+    <h5 class="card-title">Age : </h5>
+    <h3 class="card-text" style="color: rgba(26, 92, 140, 0.993);">{{ student.age }}</h3>
+
+    <h5 class="card-title">Phone : </h5>
+    <h3 class="card-text" style="color: rgba(26, 92, 140, 0.993);">{{ student.phone }}</h3>
+
+    <h5 class="card-title">Address : </h5>
+    <h3 class="card-text" style="color: rgba(26, 92, 140, 0.993);">{{ student.address }}</h3>
+  </div>
+
+</div>
+<ng-template #loading>
+  <h1 class="text-center m-1">Loading</h1>
+  <img class="m-5" src="../../../assets/images/loading.jpg" alt="" width="70%" >
+</ng-template>
